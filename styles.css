@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* added white background */
+    color: black; /* changed default text color to black */
+}
+
+header {
+    background-color: #333;
+    color: red; /* changed header text color to red */
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 1em;
+    text-align: left;
+    color: black; /* changed table text color to black */
+}
+
+/* Added red border for table headers */
+th {
+    border-bottom: 2px solid red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form textarea {
+    margin-bottom: 1em;
+}
+
+@media (max-width: 600px) {
+    header, footer {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 1em 0;
+    }
+
+    form {
+        width: 100%;
+    }
+}
